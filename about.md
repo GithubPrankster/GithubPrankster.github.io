@@ -9,10 +9,13 @@ Hello, I'm Uneven Prankster, the master of pure nonsense and games. Since I was 
 ### Interesting places i'm also on!
 
 Shadertoy: [ShaderPrankster](https://www.shadertoy.com/user/ShaderPrankster)
+
 Discord Server: [Uneven Prankster Games](https://discordapp.com/invite/re2YfaW)
+
 Patreon: [Uneven Prankster](https://www.patreon.com/unevenprankster)
 
 ### Contacts
 
 Twitter: @StarPrankster
+
 Discord: Unevenmetalic Prankster#9347
