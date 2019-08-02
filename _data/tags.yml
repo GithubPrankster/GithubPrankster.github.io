@@ -1,11 +1,11 @@
-tag1:
-  name: tag1
+gamedev:
+  name: gamedev
 
-tag2:
-  name: tag2
+programming:
+  name: programming
 
-tag3:
-  name: tag3
+general:
+  name: general
 
-tag4:
-  name: tag4
+random:
+  name: random
