@@ -8,9 +8,17 @@ description: Your description here
 google_verification: null
 
 
+<<<<<<< HEAD
 # File management
 include: [".htaccess"]
 exclude: ["README.md", "LICENSE"]
+=======
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://cdn.discordapp.com/attachments/605879338067558401/606546024575533086/nintenweb.png
+#
+# Flags below are optional
+#
+>>>>>>> 1481b438a40e5aa93de08b3269d822c851006b6f
 
 # Sass
 sass:
