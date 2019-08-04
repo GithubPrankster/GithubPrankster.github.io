@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Russian Blocks, part 1"
-tags: programming, gamedev
+tags: gamedev programming
 ---
 
 ## Source: [Markdown Test Page](https://github.com/fullpipe/markdown-test-page)
