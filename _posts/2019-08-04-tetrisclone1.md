@@ -9,7 +9,7 @@ tags: gamedev programming
 So, I like Tetris. Tetris is cool.  There is a ton of tetris.
 
 ![Where it all went nuts.](https://cdn.discordapp.com/attachments/605879338067558401/607608024596742145/gb_tetris_p_twe54z.png)
-![Cheeky name, visual/audio feast.](https://cdn.discordapp.com/attachments/605879338067558401/607619176860745728/Diesel2Fproduct2Fkiwi2Fhome2F10_EGS_enhance_tetriseffect_G2_gamepage_about_image_v2-28129-840x840-e9.png)
+![Cheeky name, visual/audio feast.](https://cdn.discordapp.com/attachments/605879338067558401/607620548465393692/effect.png)
 ![Technically more of a Puyo-Puyo game, but still, Tetris. Double the fun.](https://cdn.discordapp.com/attachments/605879338067558401/607619400547434507/image.png)
 
 
