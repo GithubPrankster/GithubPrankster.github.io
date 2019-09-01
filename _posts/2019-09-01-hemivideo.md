@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Hemisphere Station: video"
-tags: gamedev programming
+tags: gamedev programming hemisphere
 ---
 
 # A document about video decoding in general
