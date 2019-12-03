@@ -19,11 +19,11 @@ nav{
     font-family: 'Franklin Gothic Medium';
     border-style: solid;
     border-width: 2px;
-    box-shadow: 0px 5px rgb(1, 100, 100);
+    box-shadow: 0px 5px rgb(1, 40, 40);
 }
 
 body{
-    background-color: darkcyan;
+    background-color: rgb(1, 50, 50);
 }
 
 section{
@@ -31,7 +31,7 @@ section{
     border-color: black;
     border-style: solid;
     border-width: 2px;
-    box-shadow: 5px 5px rgb(1, 100, 100);
+    box-shadow: 5px 5px rgb(1, 40, 40);
     margin-bottom: 1em;
 }
 
