@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uneven Prankster</title>
+        <link rel = "icon" type = "image/x-icon" href="../res/favicon.ico">
+        <link rel= "stylesheet" type= "text/css" href= "../main.css">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Uneven Prankster">
+        <meta property="og:description" content="A blog post on OSdev and why Uneven uses C.">
+        <meta property="og:image" content="http://githubprankster.github.io/res/deluxe.png">
+    </head>
+
+    <body>
+        <header>
+            <span>
+                <img src="../res/deluxe.png" alt="Uneven Prankster">
+                <p>"Solo indiedev who spins you right round."</p>
+            </span>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home!</a> 
+                    <a>//</a> 
+                    <a href="../about.html">About</a> 
+                    <a>//</a> 
+                    <a href="https://discordapp.com/invite/re2YfaW">Discord Server</a>
+                    <a>//</a> 
+                    <a href="https://twitter.com/StarPrankster">Twitter</a>
+                    <a>//</a> 
+                    <a href="https://www.patreon.com/unevenprankster">Patreon</a>
+                    <a>//</a> 
+                    <a href="https://ko-fi.com/uneven">Ko-Fi</a>
+                    <a>//</a> 
+                    <a href="https://www.youtube.com/channel/UCns7LWoeawHKZIyMQnq65kQ">Youtube</a>
+                    <a>//</a> 
+                    <a href="https://unevenprankster.itch.io">itch.io</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>/*/*/ The Future is Raytraced</h1>
+
+	        <section>
+                <h2>What is a "raytracing", dear lad?</h2>
+                <p>
+                    Raytracing is a technique commonly used for graphics processing in
+                    which tens of thousands of "rays", commonly an extension of vectors,
+                    are thrown about in a scene, capturing data from hit geometry or reporting the lack
+                    there of. This is then used to construct a result.
+                </p>
+                <p>
+                    I wish they explained it more like this. This is anyways a pretty light
+                    interpretation of the algorithm but you get the point. This process is
+                    focused on being accurate and capable of being highly parallelized
+                    (that is, run by the multiple cores of the processing units of your
+                    machine pretty well),
+                    and also capable of producing very photo-realistic imagery.
+                </p>
+                <h2>So what's the deal now?</h2>
+                <p>
+                    Until recent years, while this was known to be the case, we used the
+                    Rasterization algorithm instead, which is able to be extremely more quick
+                    but requiring lots of tricks to make it look very good. However,
+                    graphics processing units are starting to implement cores and algorithms
+                    that can process Raytracing fast enough that we can now do some of it in
+                    Real-Time. Yes, that's the RTX that nvidia loves to talk about.
+                </p>
+                <p>
+                    These are still pretty expensive, and not many games use it, and neither is
+                    the usage pretty crazy. Mostly it is used for reflections, an often tricky
+                    thing to do in Rasterization which can either take too long or look odd.
+                </p>
+                <p>
+                    However, 3D rendering in gaming started too as a gimmick people said it would never catch on,
+                    and now all the big games use it. Raytracing is no different. It'll bring
+                    accurate rendering and ease in construction of effects and ideas like
+                    never seen before. Imagine the mirror actually correctly reacting to
+                    you throwing a cube at it. Or lightning being highly dynamic and
+                    correct as far as our understanding of physics goes. We could already
+                    do it in Rasterization, but always odd. And now we're even! (not me tho)
+                </p>
+                <p>
+                    Currently, the Vulkan API has recently introduced an extension to bring a common
+                    Raytracing platform for both nvidia and amd. This will hopefully make it easier
+                    for developers to have Raytracing for games that can work on both graphics cards
+                    and so on. Still pretty early to say but that's what I hope! We all can have
+                    little a Raytracing.
+                </p>
+            </section>
+            <section>
+                <h2>Where do I look for more info?</h2>
+                <p>
+                    Fear not! I keep tabs on game dev discords, channels, discord channels and 
+                    twitter. I have a few things in mind you could take a look at to get better
+                    informed. Be aware you may need some programming language knowledge,
+                    (preferably C, C++, etc. but weblangs and others are ok!)
+                    but you can try learning some in your own pace.
+                </p>
+                <p>
+                <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">Wikipedia's Take</a>
+                </p>
+                <p>
+                    <a href="https://www.scratchapixel.com/">Scratchapixel - Uses C++, Good Stuff</a>
+                </p>
+                <p>
+                    <a href="https://raytracing.github.io/">Raytracing in One Weekend Books - Uses C++, Photo-Realist</a>
+                </p>
+                <p>
+                    <a href="ttp://www.realtimerendering.com/raytracinggems/">Ray Tracing Gems - Open Source Book, Industry Smarts</a>
+                </p>
+                <p>
+                    <a href="ttps://www.realtimerendering.com/raytracing.html">Real Time Rendering's RT Section - Industry Smarts</a>
+                </p>
+                <p>
+                    <a href="http://www.pbr-book.org/">PBR Book - Open Source Book, Industry Smarts, Photo-Realist</a>
+                </p>
+                <p>
+                    <a href="https://iorange.github.io/">Inorange RTX Vulkan Tutorials - Uses C++, In The Works!</a>
+                </p>
+            </section>
+        </main>
+
+        <footer>2020, Uneven Prankster, there may be rights reserved. Or not. Who knows?!</footer>
+    </body>
+</html>
