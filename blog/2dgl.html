@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uneven Prankster</title>
+        <link rel = "icon" type = "image/x-icon" href="../res/favicon.ico">
+        <link rel= "stylesheet" type= "text/css" href= "../main.css">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Uneven Prankster">
+        <meta property="og:description" content="A blog post on Uneven's know-how on almost the exact opposite of 3D rendering.">
+        <meta property="og:image" content="http://githubprankster.github.io/res/broadgen.png">
+    </head>
+
+    <body>
+        <header>
+            <span>
+                <img src="../res/broadgen.png" alt="Uneven Prankster">
+                <p>"Indiedev juggling 4 things at once."</p>
+            </span>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home!</a> 
+                    <a>//</a> 
+                    <a href="../about.html">About</a> 
+                    <a>//</a> 
+                    <a href="https://discordapp.com/invite/re2YfaW">Discord Server</a>
+                    <a>//</a> 
+                    <a href="https://twitter.com/StarPrankster">Twitter</a>
+                    <a>//</a> 
+                    <a href="https://www.patreon.com/unevenprankster">Patreon</a>
+                    <a>//</a> 
+                    <a href="https://ko-fi.com/uneven">Ko-Fi</a>
+                    <a>//</a> 
+                    <a href="https://www.youtube.com/channel/UCns7LWoeawHKZIyMQnq65kQ">Youtube</a>
+                    <a>//</a> 
+                    <a href="https://unevenprankster.itch.io">itch.io</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>/*/*/ 3D Rendering goes Uneven</h1>
+
+	        <section>
+                <h2>You've been pogged! (and so has been the rules)</h2>
+                <p>
+                   	I was pulling your leg right there and then. This is mainly my knowledge working with 2D on
+			an enviromment that is mainly meant for 3D.
+                </p>
+		 <p>
+                   	Anyhow, I have been playing with OpenGL a lot since I was a programming bab and thought
+			making a Minecraft clone would amazing. It's easy to see now that attempting to make
+			something work in Java with no knowledge whatsoever is asking for trouble. But past me
+			didn't know that. They even <a href="https://github.com/GithubPrankster/pkGL">made 'something'
+			work</a> in C++.
+                </p>
+		 <p>
+                   	Alas, I always tried to ignore something pulling my own leg at these times. What about a GUI?
+			Sprites? Anything 2D? Lemme tell you 1 (one) thing here: I tried a lot and it was SO annoying.
+			... Because I also didn't know much about it! It's easy enough to plot pixels or use a nice library
+			solution to do things, but eventually you touch the GPU and things get funny. Touch fuzzy, get dizzy.
+                </p>
+		 </section>
+
+		<section>
+                <h2>Projection, Quads, and You</h2>
+                <p>
+                   	One thing you first need to realize when making a 2D GL thing is to get a projection matrix
+			right there and then. You'll need Orthographic Projection, it does not account for depth
+			distortions (therefore all things occupy the same size even when far away or close).
+                </p>
+		<p>
+                   	Other thing you'll need is Quads. Say you have your little square you made in a structure. Now
+			imagine having that for every tile. Every single one. You'll need to find ways to reduce how many
+			of those you draw. The more famous option is Sprite Batching, which turns all of them into 1 single
+			draw call, at the cost of being quite complex to handle, but libraries exist.
+                </p>
+		<p>
+                   	And now, you. You need to make a nice GUI with those, animations with spritesheets, get those to have
+			adjustable timing so your sprite doesn't do the world's fastest disco dance, and that's not even getting
+			started on making them move. I'd call it a fancy 1D cube by the end of the day because it'll not
+			be that different. Did you forget to add audio too? Oh, uh.... Go ask the guy working on his OpenAL solution
+			in your preferred discord server.
+                </p>
+		 </section>
+
+		<section>
+                <h2>Notes: About Shaders</h2>
+                <p>
+                   	Shaders... What a wonderful thing they are. Learning GLSL has to be one of the best things
+			you can do. I'd sugest you try to learn distorting around the texture for wacky effects.
+			Just simple playing around will open a lot your eyes to the many tricks devs come up with by
+			experimentation. Just beware not to make syntax errors. I'd also really recommend ShaderToy for
+			a web playground. It's free, it's cool, no excuses.
+                </p>
+		 </section>
+        </main>
+
+        <footer>2020, Uneven Prankster, rights are reserved for things that are reserved, and not for things that aren't.</footer>
+    </body>
