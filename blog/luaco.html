@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uneven Prankster</title>
+        <link rel = "icon" type = "image/x-icon" href="../res/favicon.ico">
+        <link rel= "stylesheet" type= "text/css" href= "../main.css">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Uneven Prankster">
+        <meta property="og:description" content="A blog post on utilizing Lua's coroutines.">
+        <meta property="og:image" content="http://githubprankster.github.io/res/broadgen.png">
+    </head>
+
+    <body>
+        <header>
+            <span>
+                <img src="../res/broadgen.png" alt="Uneven Prankster">
+                <p>"Indiedev reinventing wheels."</p>
+            </span>
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home!</a> 
+                    <a>//</a> 
+                    <a href="../about.html">About</a> 
+                    <a>//</a> 
+                    <a href="https://discordapp.com/invite/re2YfaW">Discord Server</a>
+                    <a>//</a> 
+                    <a href="https://twitter.com/StarPrankster">Twitter</a>
+                    <a>//</a> 
+                    <a href="https://www.patreon.com/unevenprankster">Patreon</a>
+                    <a>//</a> 
+                    <a href="https://ko-fi.com/uneven">Ko-Fi</a>
+                    <a>//</a> 
+                    <a href="https://www.youtube.com/channel/UCns7LWoeawHKZIyMQnq65kQ">Youtube</a>
+                    <a>//</a> 
+                    <a href="https://unevenprankster.itch.io">itch.io</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>/*/*/ Coroutines in Lua</h1>
+
+	        <section>
+                <h2>What is a coroutine?</h2>
+                <p>
+                   	Coroutines are like functions. They start a little bit the same way. However,
+			inside one, you'll eventually hit upon a statement such as 'yield'! The coroutine
+			will store the place where it was, and give back control to the main running thread.
+			Or another coroutine, too! You can then later resume it (and give a few extra arguments
+			if needed) for it to do its other stuff.
+                </p>
+		<p>
+			This is obviously HUGE. Say you want Little Jimmy to say 'Alright' after Julia says
+			'The football is on that chair.'. Wouldn't it be nice if we kept the function for Jimmy's
+			speech tidy in its own place, same for Julia? Make them coroutines. After one says something,
+			yield control to the other, until the conversation is finished and we go on as usual.
+		</p>
+		<p>
+			Without coroutines, you have to be constantly keeping track of bigger and bigger state and
+			constantly ask which one you're in. With coroutines, you need only to take care of yours
+			and give/receive control.
+		</p>
+		 </section>
+
+		<section>
+                <h2>Lua's Offering</h2>
+                <p>
+                   	With Lua, you first must create a coroutine with 'coroutine.create()', which you pass a function
+			to. This can be any function of yours you made, or an anonymous function! Simply pass a definition
+			of one in there.
+			<p>routine = coroutine.create(function()</p>
+					<p>print("Hello fella!")</p>
+					<p>coroutine.yield()</p>
+					<p>print("I'm paul!")</p>
+				<p>end)</p>
+
+				<p>coroutine.resume(routine) -- "Hello fella!"</p>
+				<p>coroutine.resume(routine) -- "I'm paul!"</p>
+				<p>-- By this point, the coroutine is over. Attempting to resume it</p>
+				<p>will give you a nice old error you can additionally check for</p>
+				<p>with coroutine.status(your_routine)</p>
+			<p>
+			Want to give the coroutine extra info once resumed? Pass stuff on your `coroutine.resume` and make
+			values on the coroutines' end to recieve what `coroutine.yield()` will, well, yield!
+
+			You think you can go bonkers with this power? <i>You can.</i> Just check out 
+			<a href="http://www.jonathanfischer.net/lua-coroutines/">how someone made a task/signal system out of them!</a>
+                	</p>
+		</p>
+		 </section>
+		<section>
+		<h2>More Info</h2>
+		<p>
+			<a href="http://www.lua.org/pil/9.1.html"> Official Lua tutorial on their usage</a>
+			<a>//</a> 
+			<a href="https://en.wikipedia.org/wiki/Coroutine"> Wikipedia's take on them</a>
+			<a>//</a> 
+			<a href="https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html"> A C implementation using trickery!</a>
+		</p>
+		</section>
+        </main>
+
+        <footer>2020, Uneven Prankster, cmp right_reserve, 1; jpe right_reservation</footer>
+    </body>
