@@ -5,14 +5,14 @@
 
 header {
     background-image: url(res/monroe_bg.png);
-    font-family: 'Trebuchet MS';
-    font-size: large;
+    font-family: "Georgia", italic;
+    font-size: x-large;
     text-align: center;
     color: black;
 }
 
 nav{
-    background-color: bisque;
+    background-color: gold;
     display: block;
     text-align: center;
     font-family: 'Franklin Gothic Medium';
@@ -39,7 +39,16 @@ section > h2{
     background-color: rgb(31, 41, 41);
     font-family: Cambria;
     font-size: large;
-    color:whitesmoke;
+    color:white;
+}
+
+section > h1{
+    padding: 0.1em;
+    background-color: gold;
+    font-family: Cambria;
+    font-size: x-large;
+    text-align: center;
+    color:black;
 }
 
 main{
@@ -47,7 +56,7 @@ main{
 }
 
 section > p{
-    padding: 0.1em;
+    padding: 0.2em;
     background-color: rgb(188, 194, 158);
     font-family: 'Trebuchet MS';
     font-size: large;
@@ -63,4 +72,5 @@ section > h2 > span{
 
 footer{
     text-align: center;
+    font-size: large;
 }
