@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Uneven Prankster's Blog</title>
+  <link>https://githubprankster.github.io/</link>
+  <description>Ramblings of The Insane Brazilian Gamedev</description>
+  <category>Gamedev/Blog/Misc/Graphics</category>
+  <language>en-us</language>
+
+  <item>
+    <title>3 Years of Indiedev</title>
+    <link>https://githubprankster.github.io/blog/3years.html</link>
+    <description>A blog post on looking back at achievements, many, many failures, and ahead.</description>
+	<pubDate>12/10/2020</pubDate>
+  </item>
+
+  <item>
+    <title>Coroutines in Lua</title>
+    <link>https://githubprankster.github.io/blog/luaco.html</link>
+    <description>A blog post on utilizing Lua's coroutines.</description>
+	<pubDate>19/09/2020</pubDate>
+  </item>
+
+  <item>
+    <title>3D Rendering goes Uneven</title>
+    <link>https://githubprankster.github.io/blog/2dgl.html</link>
+    <description>A blog post on the opposite of 3D rendering.</description>
+	<pubDate>04/09/2020</pubDate>
+  </item>
+
+  <item>
+    <title>Aftermath of Indiepocalypse</title>
+    <link>https://githubprankster.github.io/blog/indiepocalypse.html</link>
+    <description>A blog post in my opinions on the state of Indie gaming.</description>
+	<pubDate>28/06/2020</pubDate>
+  </item>
+
+  <item>
+    <title>The Future is Raytraced</title>
+    <link>https://githubprankster.github.io/blog/raytracing.html</link>
+    <description>A blog post on the power of raytracing.</description>
+	<pubDate>23/04/2020</pubDate>
+  </item>
+
+  <item>
+    <title>Operating Systems, and Language Hell</title>
+    <link>https://githubprankster.github.io/blog/oses-and-hell.html</link>
+    <description>A blog post on OSdev, and why I like using C.</description>
+	<pubDate>02/04/2020</pubDate>
+  </item>
+</channel>
+
+</rss>
